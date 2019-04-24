@@ -1,0 +1,80 @@
+# All work performed within "DB Browser for SQLite"
+
+# Table Creation
+
+CREATE TABLE `2017_Reg_Season` ( `team_market` , `team_name` , `team_id` , `total_games_played` , `total_minutes_played` , `total_field_goals_made` , `total_field_goals_att` , `total_field_goals_pct` , `total_two_points_made` , `total_two_points_att` , `total_two_points_pct` , `total_three_points_made` , `total_three_points_att` , `total_three_points_pct` , `total_blocked_att` , `total_free_throws_made` , `total_free_throws_att` , `total_free_throws_pct` , `total_offensive_rebounds` , `total_defensive_rebounds` , `total_rebounds` , `total_assists` , `total_turnovers` , `total_assists_turnover_ratio` , `total_steals` , `total_blocks` , `total_personal_fouls` , `total_tech_fouls` , `total_points` , `total_fast_break_pts` , `total_flagrant_fouls` , `total_points_off_turnovers` , `total_second_chance_pts` , `total_ejections` , `total_foulouts` , `total_points_in_paint` , `total_efficiency` , `total_true_shooting_att` , `total_true_shooting_pct` , `average_fast_break_pts` , `average_points_off_turnovers` , `average_second_chance_pts` , `average_minutes` , `average_points` , `average_off_rebounds` , `average_def_rebounds` , `average_rebounds` , `average_assists` , `average_steals` , `average_blocks` , `average_turnovers` , `average_personal_fouls` , `average_flagrant_fouls` , `average_blocked_att` , `average_field_goals_made` , `average_field_goals_att` , `average_three_points_made` , `average_three_points_att` , `average_free_throws_made` , `average_free_throws_att` , `average_two_points_made` , `average_two_points_att` , `average_points_in_paint` , `average_efficiency` , `average_true_shooting_att` );
+
+CREATE TABLE `2017_Reg_Season_win_loss` ( `team_id` , `team_name` , `rank` , `total_wins` , `total_losses` , `adj_win_perc` , `str_of_sched` , `rpi` );
+
+
+
+CREATE TABLE "2018_Team_Stats_sample" ( `team_market` TEXT, `team_name` TEXT, `team_id` TEXT, `total_games_played` TEXT, `total_minutes_played` TEXT, `total_field_goals_made` TEXT, `total_field_goals_att` TEXT, `total_field_goals_pct` TEXT, `total_two_points_made` TEXT, `total_two_points_att` TEXT, `total_two_points_pct` TEXT, `total_three_points_made` TEXT, `total_three_points_att` TEXT, `total_three_points_pct` TEXT, `total_blocked_att` TEXT, `total_free_throws_made` TEXT, `total_free_throws_att` TEXT, `total_free_throws_pct` TEXT, `total_offensive_rebounds` TEXT, `total_defensive_rebounds` TEXT, `total_rebounds` TEXT, `total_assists` TEXT, `total_turnovers` TEXT, `total_assists_turnover_ratio` TEXT, `total_steals` TEXT, `total_blocks` TEXT, `total_personal_fouls` TEXT, `total_tech_fouls` TEXT, `total_points` TEXT, `total_fast_break_pts` TEXT, `total_flagrant_fouls` TEXT, `total_points_off_turnovers` TEXT, `total_second_chance_pts` TEXT, `total_ejections` TEXT, `total_foulouts` TEXT, `total_points_in_paint` TEXT, `total_efficiency` TEXT, `total_true_shooting_att` TEXT, `total_true_shooting_pct` TEXT, `average_fast_break_pts` TEXT, `average_points_off_turnovers` TEXT, `average_second_chance_pts` TEXT, `average_minutes` TEXT, `average_points` TEXT, `average_off_rebounds` TEXT, `average_def_rebounds` TEXT, `average_rebounds` TEXT, `average_assists` TEXT, `average_steals` TEXT, `average_blocks` TEXT, `average_turnovers` TEXT, `average_personal_fouls` TEXT, `average_flagrant_fouls` TEXT, `average_blocked_att` TEXT, `average_field_goals_made` TEXT, `average_field_goals_att` TEXT, `average_three_points_made` TEXT, `average_three_points_att` TEXT, `average_free_throws_made` TEXT, `average_free_throws_att` TEXT, `average_two_points_made` TEXT, `average_two_points_att` TEXT, `average_points_in_paint` TEXT, `average_efficiency` TEXT, `average_true_shooting_att` TEXT, PRIMARY KEY(`team_id`) );
+
+
+CREATE TABLE `2018_Reg_Season` ( `team_market` , `team_name` , `team_id` , `total_games_played` , `total_minutes_played` , `total_field_goals_made` , `total_field_goals_att` , `total_field_goals_pct` , `total_two_points_made` , `total_two_points_att` , `total_two_points_pct` , `total_three_points_made` , `total_three_points_att` , `total_three_points_pct` , `total_blocked_att` , `total_free_throws_made` , `total_free_throws_att` , `total_free_throws_pct` , `total_offensive_rebounds` , `total_defensive_rebounds` , `total_rebounds` , `total_assists` , `total_turnovers` , `total_assists_turnover_ratio` , `total_steals` , `total_blocks` , `total_personal_fouls` , `total_tech_fouls` , `total_points` , `total_fast_break_pts` , `total_flagrant_fouls` , `total_points_off_turnovers` , `total_second_chance_pts` , `total_ejections` , `total_foulouts` , `total_points_in_paint` , `total_efficiency` , `total_true_shooting_att` , `total_true_shooting_pct` , `average_fast_break_pts` , `average_points_off_turnovers` , `average_second_chance_pts` , `average_minutes` , `average_points` , `average_off_rebounds` , `average_def_rebounds` , `average_rebounds` , `average_assists` , `average_steals` , `average_blocks` , `average_turnovers` , `average_personal_fouls` , `average_flagrant_fouls` , `average_blocked_att` , `average_field_goals_made` , `average_field_goals_att` , `average_three_points_made` , `average_three_points_att` , `average_free_throws_made` , `average_free_throws_att` , `average_two_points_made` , `average_two_points_att` , `average_points_in_paint` , `average_efficiency` , `average_true_shooting_att` );
+
+CREATE TABLE `2018_Reg_Season_win_loss` ( `team_id` , `team_name` , `rank` , `total_wins` , `total_losses` , `adj_win_perc` , `str_of_sched` , `rpi` );
+
+
+# Creating Seeding Tables
+CREATE TABLE "2018_seeding" ( `year` TEXT, `Seed` TEXT, `TeamName` TEXT, `TEAMID` TEXT, PRIMARY KEY(`TEAMID`) );
+
+CREATE TABLE `2019_seeding` ( `year` , `Seed` , `TeamName` , `TEAMID` );
+
+# Coaching zodiac and astrological signs
+# data gathered by Anna
+CREATE TABLE `NCAA_Coach_DOB_andy_edits` ( `Team` , `Conference` , `Currentcoach` , `DOB` , `Month` , `Day` , `Year` , `Since` , `M_D_DOB` , `Sign` , `ChineseZodiac` , `Age` , `team_market` , `team_name` , `team_id` );
+
+Various Queries:
+
+
+select a.seed, b.* , c.Currentcoach, c.Month, c.Year, c.Sign, c.ChineseZodiac, c.Age
+from '2018_seeding' a, '2018_Team_Stats_sample' b, 'NCAA_Coach_DOB_andy_edits' c
+where a.teamid = b.team_id
+and a.teamid = c.team_id
+and b.team_id is not null
+order by a.Seed;
+
+# Query to create 2017_Final.csv file
+select c.seed, a.team_market || " " || a.team_name as "team_name", a.team_id , a.total_games_played ,b.total_wins,b.total_losses, 
+b.adj_win_perc, b.str_of_sched, b.rpi, a.total_minutes_played , 
+a.total_field_goals_made , a.total_field_goals_att , a.total_field_goals_pct , a.total_two_points_made , a.total_two_points_att , 
+a.total_two_points_pct , a.total_three_points_made , a.total_three_points_att , a.total_three_points_pct , a.total_blocked_att , 
+a.total_free_throws_made , a.total_free_throws_att , a.total_free_throws_pct , a.total_offensive_rebounds , a.total_defensive_rebounds , 
+a.total_rebounds , a.total_assists , a.total_turnovers , a.total_assists_turnover_ratio , a.total_steals , a.total_blocks , a.total_personal_fouls ,
+ a.total_tech_fouls , a.total_points , a.total_fast_break_pts , a.total_flagrant_fouls , a.total_points_off_turnovers , a.total_second_chance_pts
+ , a.total_ejections , a.total_foulouts , a.total_points_in_paint , a.total_efficiency , a.total_true_shooting_att , a.total_true_shooting_pct ,
+a. average_fast_break_pts , a.average_points_off_turnovers , a.average_second_chance_pts , a.average_minutes , a.average_points ,
+ a.average_off_rebounds , a.average_def_rebounds , a.average_rebounds , a.average_assists , a.average_steals , a.average_blocks ,
+ a.average_turnovers , a.average_personal_fouls , a.average_flagrant_fouls , average_blocked_att , a.average_field_goals_made ,
+a. average_field_goals_att , a.average_three_points_made , a.average_three_points_att , a.average_free_throws_made , a.average_free_throws_att ,
+a. average_two_points_made , a.average_two_points_att , a.average_points_in_paint , a.average_efficiency , a.average_true_shooting_att
+from '2017_Reg_Season' a,'2017_Reg_Season_win_loss' b, '2018_seeding' c
+where a.team_id = b.team_id
+and a.team_id = c.teamid;
+
+select c.seed, a.team_market || " " || a.team_name as "team_name", a.team_id
+from '2018_Reg_Season' a;
+
+select a.seed, b.* 
+from '2018_seeding' a, '2018_Team_Stats_sample' b
+where a.teamid = b.team_id
+and b.team_id is not null;
+
+#Query to create 2018_Final.csv file
+select c.seed, a.team_market || " " || a.team_name as "team_name", a.team_id , a.total_games_played ,b.total_wins,b.total_losses, 
+b.adj_win_perc, b.str_of_sched, b.rpi, a.total_minutes_played , 
+a.total_field_goals_made , a.total_field_goals_att , a.total_field_goals_pct , a.total_two_points_made , a.total_two_points_att , 
+a.total_two_points_pct , a.total_three_points_made , a.total_three_points_att , a.total_three_points_pct , a.total_blocked_att , 
+a.total_free_throws_made , a.total_free_throws_att , a.total_free_throws_pct , a.total_offensive_rebounds , a.total_defensive_rebounds , 
+a.total_rebounds , a.total_assists , a.total_turnovers , a.total_assists_turnover_ratio , a.total_steals , a.total_blocks , a.total_personal_fouls ,
+ a.total_tech_fouls , a.total_points , a.total_fast_break_pts , a.total_flagrant_fouls , a.total_points_off_turnovers , a.total_second_chance_pts
+ , a.total_ejections , a.total_foulouts , a.total_points_in_paint , a.total_efficiency , a.total_true_shooting_att , a.total_true_shooting_pct ,
+a. average_fast_break_pts , a.average_points_off_turnovers , a.average_second_chance_pts , a.average_minutes , a.average_points ,
+ a.average_off_rebounds , a.average_def_rebounds , a.average_rebounds , a.average_assists , a.average_steals , a.average_blocks ,
+ a.average_turnovers , a.average_personal_fouls , a.average_flagrant_fouls , average_blocked_att , a.average_field_goals_made ,
+a. average_field_goals_att , a.average_three_points_made , a.average_three_points_att , a.average_free_throws_made , a.average_free_throws_att ,
+a. average_two_points_made , a.average_two_points_att , a.average_points_in_paint , a.average_efficiency , a.average_true_shooting_att
+from '2018_Reg_Season' a,'2018_Reg_Season_win_loss' b, '2019_seeding' c
+where a.team_id = b.team_id
+and a.team_id = c.teamid;
